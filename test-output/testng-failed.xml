@@ -1,26 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [BookMyShow Test Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="BookMyShow Tests(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.MoviePageTest">
+      <class name="tests.LoginTest">
         <methods>
-          <include name="testTopMenuNavigation"/>
-          <include name="tearDown"/>
-          <include name="testUpcomingAndNowShowing"/>
-          <include name="setUp"/>
-          <include name="testMovieSelectRunningMovie"/>
+          <include name="setupPagesAndSelectCity"/>
+          <include name="quitDriver"/>
+          <include name="setup"/>
+          <include name="testLoginWithInvalidMobile"/>
         </methods>
-      </class> <!-- tests.MoviePageTest -->
-      <class name="tests.CitySearchTest">
-        <methods>
-          <include name="testInvalidCitySearch"/>
-          <include name="tearDown"/>
-          <include name="testValidCitySearch"/>
-          <include name="setUp"/>
-          <include name="testViewAllCities"/>
-        </methods>
-      </class> <!-- tests.CitySearchTest -->
+      </class> <!-- tests.LoginTest -->
     </classes>
-  </test> <!-- BookMyShow Tests(failed) -->
-</suite> <!-- Failed suite [BookMyShow Test Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,125 +1,79 @@
 package pages;
 
-
-import java.time.Duration;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
+import base.DriverSetup;
+import base.ConfigLoader;
+import locators.LocatorRepository;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import utils.WaitUtils;
 
 public class LoginPage {
+    private final WebDriver driver;
 
-	
-	WebDriver ldriver;
-	
-	JavascriptExecutor executor;
-	WebDriverWait wait40;
+    public LoginPage() {
+        this.driver = DriverSetup.getDriver();
+        PageFactory.initElements(driver, this);
+        System.out.println("LoginPage initialized with WebDriver instance: " + driver.getClass().getSimpleName());
+    }
+    
+    
+    public boolean validSignIn() {
+        System.out.println("Starting valid login attempt.");
 
- 	
-	 public LoginPage(WebDriver rdriver){
-		 
-		 ldriver = rdriver;
-		 this.executor = (JavascriptExecutor) this.ldriver;
-		 this.wait40 = new WebDriverWait(ldriver, Duration.ofSeconds(30));
+        try {
+            WebElement signInBtn = WaitUtils.visible(LocatorRepository.get("signInBtn"), 10);
+            signInBtn.click();
 
-		 PageFactory.initElements(rdriver, this);
-	 }
+            WebElement mobileBox = WaitUtils.visible(LocatorRepository.get("mobileNumberBox"), 10);
+            Assert.assertNotNull(mobileBox, "Mobile number input box not found");
+            mobileBox.clear();
+            mobileBox.sendKeys(ConfigLoader.get("mobileNumber"));
 
-	     //City Search
-	 
-		@FindBy (xpath="//input[@placeholder='Search for your city']")
-		 
-		 WebElement city;
-		
-		
-	 //Sign-In Button On Home Page.
-	 
-	 @FindBy (xpath="//*[text()=\"Sign in\"]")
-	 
-	  WebElement SignInButton;
-	 
-	   
-		
-	  @FindBy (xpath=("//input[@id='userMobileNumber']"))
-		 
-	 WebElement MobileInput;
-	  
-	//@FindBy(xpath=("//*[@id=\"bottomSheet-model-close\"]/div/div/div[2]/div[2]/div[2]/div/div"))
-	  @FindBy(xpath = "//*[@id='bottomSheet-model-close']/div/div/div[2]/div[2]/div[2]/div/div")
-	  private WebElement continueButton;
-	  
-	  @FindBy(xpath="//div[@id='super-wrapper']//input[1]")
-	  private WebElement enterOtp;
-	  
-	  @FindBy (xpath="//div[@class='sc-1ydq0aj-0 bIaakI']//*[name()='svg']")
-	   WebElement backBtn;
-	  
-	  @FindBy(xpath="//*[@class=\"sc-1ydq0aj-6 gnsbYm\"]")
-	  WebElement cBtn;
-	  
-	  
-	  
-	  public void citysearchClear() {
-			
-			city.clear();
-			
-	  }
-		
-		 public void SendCityName(String Pu ) {
-			  
-			  city.sendKeys(Pu);
-		  }
-		 
-		 public void SendEnterKeys(Keys Enterkeys ) {
-			  
-			  city.sendKeys(Enterkeys);
-		  }
+            WebElement continueBtn = WaitUtils.visible(LocatorRepository.get("continueBtn"), 10);
+            continueBtn.click();
 
-		 public void clickCity() {
-			 System.out.println("clicked");
-			  
-			  city.click();
-		  }
-	 
-	 
-	 public void SignIn() {
-		 
-		 SignInButton.click();
-	 }
-     
+            WebElement otpfield = WaitUtils.visible(LocatorRepository.get("otp"), 10);
+            otpfield.sendKeys(ConfigLoader.get("otp"));
+            
+            WebElement back = WaitUtils.visible(LocatorRepository.get("backBtn"), 10);
+            back.click();
+            
+            WebElement cross = WaitUtils.visible(LocatorRepository.get("crossBtn"), 10);
+            cross.click();
+            
+            System.out.println("Valid login flow executed successfully.");
+            return true;
+            
+        } catch (Exception e) {
+            System.err.println("Valid login failed: " + e.getMessage());
+            return false;
+        }
+    }
 
-	  public void enterMobileNumber(String string) {
-		  MobileInput.sendKeys(string);
-	  }
+    public void signInInvalid() {
+        System.out.println("Starting invalid login attempt.");
 
-	  public void clickContinue() {
-		  continueButton.click();
-		
-	  }
+        WebElement signInBtn = WaitUtils.visible(LocatorRepository.get("signInBtn"), 10);
+        Assert.assertNotNull(signInBtn, "'Sign In' button not found");
+        signInBtn.click();
 
-	  public void enterOTP(String str) {
-		enterOtp.sendKeys(str);
-		
-	  }
+        WebElement mobileBox = WaitUtils.visible(LocatorRepository.get("invalidMobileNumberBox"), 10);
+        Assert.assertNotNull(mobileBox, "Invalid mobile number input box not found");
+        mobileBox.clear();
+        mobileBox.sendKeys(ConfigLoader.get("invalidMobile"));
 
-	  public void closePopup() {
-		
-		backBtn.click();
-	  }
-	  
-	  public void closeSignin() {
-		  cBtn.click();
-	  }
+        WebElement errorMsg = WaitUtils.visible(LocatorRepository.get("invalidErrorMsg"), 10);
+        Assert.assertTrue(errorMsg.isDisplayed(), "No error for invalid mobile number");
+        System.out.println("Error Message displayed: " + errorMsg.getText());
+    }
 
-	  
-	  
-	  
+    
 
-
+    public void verifySignInUI() {
+        System.out.println("Verifying Sign In UI elements via validSignIn() flow...");
+        boolean loginSuccess = validSignIn();
+        Assert.assertTrue(loginSuccess, "Sign In UI elements verification failed.");
+        System.out.println("Sign In UI elements are functional.");
+    }
 }

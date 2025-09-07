@@ -14,18 +14,6 @@
       </class> <!-- tests.CitySearchTest -->
     </classes>
   </test> <!-- CitySearchTest(failed) -->
-  <test thread-count="5" name="GiftCardTest(failed)">
-    <classes>
-      <class name="tests.GiftCardTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="testCheckGiftCardBalanceIconVisible"/>
-          <include name="testInvalidVoucherShowsErrorMessage"/>
-        </methods>
-      </class> <!-- tests.GiftCardTest -->
-    </classes>
-  </test> <!-- GiftCardTest(failed) -->
   <test thread-count="5" name="MoviePageTest(failed)">
     <classes>
       <class name="tests.MoviePageTest">
@@ -33,8 +21,8 @@
           <include name="testTopMenuNavigation"/>
           <include name="tearDown"/>
           <include name="testUpcomingAndNowShowing"/>
-          <include name="setUp"/>
           <include name="testMovieSelectRunningMovie"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- tests.MoviePageTest -->
     </classes>

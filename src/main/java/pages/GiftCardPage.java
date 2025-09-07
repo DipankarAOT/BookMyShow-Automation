@@ -1,91 +1,51 @@
 package pages;
 
-import org.openqa.selenium.Keys;
+import base.DriverSetup;
+import base.ConfigLoader;
+import locators.LocatorRepository;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+import utils.WaitUtils;
 
 public class GiftCardPage {
-    private WebDriver driver;
+    private final WebDriver driver;
 
-    // Locators
-    @FindBy(xpath = "//*[@id=\"super-container\"]/div[1]/div[2]/div/div/div[2]/div/a[4]\r\n")   // Gift Card navbar link
-    private WebElement giftCardLink;
-
-    @FindBy(xpath = "//div[text()='Check Gift Card Balance']") // Check Balance button/icon
-    private WebElement checkBalance;
-
-    @FindBy(xpath = "//input[@id='gift-voucher']")   // text box for voucher code
-    private WebElement voucherInput;
-
-    @FindBy(xpath = "//*[text()='Check Balance']")   // submit button
-    private WebElement submitBtn;
-
-    @FindBy(xpath = "//div[@id='error-gift-voucher']") // error msg
-    private WebElement errorMsg;
-
-    @FindBy(xpath = "//input[@placeholder='Search for your city']")
-    private WebElement city;
-
-    // Constructor
-    public GiftCardPage(WebDriver driver) {
-        this.driver = driver;
+    public GiftCardPage() {
+        this.driver = DriverSetup.getDriver();
         PageFactory.initElements(driver, this);
+        System.out.println("GiftCardPage initialized with WebDriver instance.");
     }
 
-    // Actions
-    public void clickGiftCardIcon() {
-        giftCardLink.click();
+    /** Opens Gift Cards section and validates 'Check Balance' icon visibility */
+    public void openGiftCardsAndValidateCheckBalanceVisible() {
+    	System.out.println("Attempting to open Gift Cards section.");
+        WaitUtils.clickable(LocatorRepository.get("gift"), 10).click();
+        System.out.println("'Gift' option clicked. Waiting for 'Check Balance' icon to appear.");
+        
+        WebElement balance = WaitUtils.clickable(LocatorRepository.get("balance"), 10);
+        Assert.assertNotNull(balance, "Check Gift Card Balance icon not present");
+        System.out.println("'Check Gift Card Balance' icon is visible and validated.");
     }
 
-    public void clickCheckBalanceIcon() {
-        checkBalance.click();
-    }
+    /** Enters an invalid voucher code and retrieves the error message reliably */
+    public void checkInvalidVoucherAndGetError() {
+    	System.out.println("Attempting to open Gift Cards section.");
+        WaitUtils.clickable(LocatorRepository.get("gift"), 10).click();
+    	System.out.println("Clicking on 'Check Balance' icon to validate voucher.");
+        WaitUtils.clickable(LocatorRepository.get("balance"), 10).click();
 
-    public boolean isCheckBalanceIconDisplayed() {
-        return checkBalance.isDisplayed();
-    }
+        WebElement code = WaitUtils.visible(LocatorRepository.get("code"), 10);
+        System.out.println("Gift voucher input field is visible. Entering invalid voucher code.");
+        
+        code.clear();
+        code.sendKeys(ConfigLoader.get("coupon"));
+        System.out.println("Invalid voucher code entered.");
 
-    public void enterVoucherCode(String code) {
-        voucherInput.clear();
-        voucherInput.sendKeys(code);
-    }
-
-    public void submitVoucher() {
-        submitBtn.click();
-    }
-
-    public String getErrorMessage() {
-        return errorMsg.getText();
-    }
-
-    public boolean isInvalidVoucherMessageDisplayed() {
-        return errorMsg.isDisplayed();
-    }
-
-    // City methods
-    public void citySearchClear() {
-        city.clear();
-    }
-
-    public void sendCityName(String cityName) {
-        city.sendKeys(cityName);
-    }
-
-    public void sendEnterKey(Keys enterKey) {
-        city.sendKeys(enterKey);
-    }
-
-    public void clickCity() {
-        city.click();
-    }
-
-    // Combined method (for invalid voucher test)
-    public void checkInvalidVoucher(String code) {
-        clickCheckBalanceIcon();
-        enterVoucherCode(code);
-        submitVoucher();
+        WebElement error = WaitUtils.visible(LocatorRepository.get("errorGiftVoucher"), 10);
+        String errorMsg = error.getText();
+        System.out.println("Error message retrieved: " + errorMsg);
+        Assert.assertNotNull(errorMsg, "No error message was seen");
     }
 }
-
