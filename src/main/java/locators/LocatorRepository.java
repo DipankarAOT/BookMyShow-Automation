@@ -6,7 +6,7 @@ import java.util.Map;
 
 public final class LocatorRepository {
     private static final Map<String, By> L = new HashMap<>();
-
+    //calls automatically when the class loads to memory
     static {
         // City Selection
         L.put("cityInput", By.xpath("//input[@placeholder='Search for your city']"));

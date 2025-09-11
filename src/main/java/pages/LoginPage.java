@@ -51,7 +51,7 @@ public class LoginPage {
         }
     }
 
-    public void signInInvalid() {
+    public void InvalidSignIn() {
         System.out.println("Starting invalid login attempt.");
 
         WebElement signInBtn = WaitUtils.visible(LocatorRepository.get("signInBtn"), 10);

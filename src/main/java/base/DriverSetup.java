@@ -20,8 +20,8 @@ public class DriverSetup {
         return browserName.get();
     }
     @Parameters("browser")
-    @BeforeMethod
     //@BeforeClass
+    @BeforeMethod
     public void setup(@Optional("chrome") String browser) {
         WebDriver drv;
 
@@ -48,7 +48,6 @@ public class DriverSetup {
     }
 
     @AfterMethod
-    //@AfterClass
     public void quitDriver() {
         if (driver.get() != null) {
             driver.get().quit();

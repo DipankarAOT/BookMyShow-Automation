@@ -1,6 +1,7 @@
 package tests; 
 
 import base.DriverSetup;
+
 import org.testng.annotations.*;
 import pages.CityPage;
 import pages.LoginPage;
@@ -11,7 +12,7 @@ public class LoginTest extends DriverSetup {
     private LoginPage login;
 
     @BeforeMethod
-    public void setupPagesAndSelectCity() {
+    public void SelectCity() {
         // Driver is already initialized by DriverSetup's @BeforeMethod
         city = new CityPage();
         login = new LoginPage();
@@ -23,11 +24,12 @@ public class LoginTest extends DriverSetup {
     @Test
     public void testLoginWithValidMobile() {
         login.validSignIn();
+
     }
 
     @Test
     public void testLoginWithInvalidMobile() {
-        login.signInInvalid();
+        login.InvalidSignIn();
     }
 
     @Test

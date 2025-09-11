@@ -24,11 +24,11 @@ public class GiftCardTest extends DriverSetup {
 
     @Test
     public void testGiftCardSection() {
-        gift.openGiftCardsAndValidateCheckBalanceVisible();
+        gift.validateCheckBalance();
     }
 
     @Test
     public void testInvalidGiftVoucher() {
-        gift.checkInvalidVoucherAndGetError();
+        gift.checkInvalidVoucher();
     }
 }

@@ -133,11 +133,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BookMyShow_Test_Suite" title="tests.MovieTest" class="method navigator-link" hash-for-method="testMovie8SelectRunningMovie">testMovie8SelectRunningMovie</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-BookMyShow_Test_Suite" title="tests.CityTest" class="method navigator-link" hash-for-method="testSearchAndSelectCity">testSearchAndSelectCity</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -148,7 +143,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BookMyShow_Test_Suite" title="tests.MovieTest" class="method navigator-link" hash-for-method="testTopMenuNavigation">testTopMenuNavigation</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-BookMyShow_Test_Suite" title="tests.MovieTest" class="method navigator-link" hash-for-method="testSelectRunningMovie">testSelectRunningMovie</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookMyShow_Test_Suite" title="tests.MovieTest" class="method navigator-link" hash-for-method="testTopMenuNavigate">testTopMenuNavigate</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -268,16 +268,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testMovie8SelectRunningMovie">
-                  </a> <!-- testMovie8SelectRunningMovie -->
-                  <span class="method-name">testMovie8SelectRunningMovie</span>
+                  <a name="testSelectRunningMovie">
+                  </a> <!-- testSelectRunningMovie -->
+                  <span class="method-name">testSelectRunningMovie</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testTopMenuNavigation">
-                  </a> <!-- testTopMenuNavigation -->
-                  <span class="method-name">testTopMenuNavigation</span>
+                  <a name="testTopMenuNavigate">
+                  </a> <!-- testTopMenuNavigate -->
+                  <span class="method-name">testTopMenuNavigate</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -302,7 +302,7 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;reports.ExtentTestNGListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;BookMyShow Tests&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;BookMyShow Tests on chrome&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.LoginTest&quot;/&gt;
@@ -310,7 +310,7 @@
       &lt;class name=&quot;tests.MovieTest&quot;/&gt;
       &lt;class name=&quot;tests.GiftCardTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- BookMyShow Tests --&gt;
+  &lt;/test&gt; &lt;!-- BookMyShow Tests on chrome --&gt;
 &lt;/suite&gt; &lt;!-- BookMyShow Test Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -322,7 +322,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">BookMyShow Tests (4 classes)</span>
+                <span class="test-name">BookMyShow Tests on chrome (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -350,58 +350,58 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testTopMenuNavigation')
+data.setCell(0, 1, 'testTopMenuNavigate')
 data.setCell(0, 2, 'tests.MovieTest')
-data.setCell(0, 3, 13897);
+data.setCell(0, 3, 13383);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testChangeLocation')
 data.setCell(1, 2, 'tests.CityTest')
-data.setCell(1, 3, 11728);
+data.setCell(1, 3, 10561);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testSearchAndSelectCity')
 data.setCell(2, 2, 'tests.CityTest')
-data.setCell(2, 3, 11511);
+data.setCell(2, 3, 10320);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'testUpcomingAndNowShowing')
 data.setCell(3, 2, 'tests.MovieTest')
-data.setCell(3, 3, 3250);
+data.setCell(3, 3, 2663);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testMovie8SelectRunningMovie')
+data.setCell(4, 1, 'testSelectRunningMovie')
 data.setCell(4, 2, 'tests.MovieTest')
-data.setCell(4, 3, 2515);
+data.setCell(4, 3, 2308);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testLoginUIElements')
+data.setCell(5, 1, 'testLoginWithValidMobile')
 data.setCell(5, 2, 'tests.LoginTest')
-data.setCell(5, 3, 1853);
+data.setCell(5, 3, 1343);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testLoginWithValidMobile')
+data.setCell(6, 1, 'testLoginUIElements')
 data.setCell(6, 2, 'tests.LoginTest')
-data.setCell(6, 3, 1798);
+data.setCell(6, 3, 1223);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'testInvalidGiftVoucher')
 data.setCell(7, 2, 'tests.GiftCardTest')
-data.setCell(7, 3, 1445);
+data.setCell(7, 3, 1130);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'testLoginWithInvalidMobile')
 data.setCell(8, 2, 'tests.LoginTest')
-data.setCell(8, 3, 1113);
+data.setCell(8, 3, 890);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'testViewAllCities')
 data.setCell(9, 2, 'tests.CityTest')
-data.setCell(9, 3, 909);
+data.setCell(9, 3, 558);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'testSelectCityByIcon')
-data.setCell(10, 2, 'tests.CityTest')
-data.setCell(10, 3, 443);
+data.setCell(10, 1, 'testGiftCardSection')
+data.setCell(10, 2, 'tests.GiftCardTest')
+data.setCell(10, 3, 491);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'testGiftCardSection')
-data.setCell(11, 2, 'tests.GiftCardTest')
-data.setCell(11, 3, 371);
+data.setCell(11, 1, 'testSelectCityByIcon')
+data.setCell(11, 2, 'tests.CityTest')
+data.setCell(11, 3, 297);
 window.suiteTableData['BookMyShow_Test_Suite']= { tableData: data, tableDiv: 'times-div-BookMyShow_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 50 seconds</span>
+              <span class="suite-total-time">Total running time: 45 seconds</span>
               <div id="times-div-BookMyShow_Test_Suite">
               </div> <!-- times-div-BookMyShow_Test_Suite -->
             </div> <!-- times-div -->
@@ -433,185 +433,185 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">setupPagesAndSelectCity</span>
-                <span class="method-start">51599 ms</span>
+                <span class="method-name">SelectCity</span>
+                <span class="method-start">19196 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginUIElements</span>
-                <span class="method-start">63187 ms</span>
+                <span class="method-start">29486 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">65045 ms</span>
+                <span class="method-start">30712 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">65455 ms</span>
+                <span class="method-start">31080 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">setupPagesAndSelectCity</span>
-                <span class="method-start">73413 ms</span>
+                <span class="method-name">SelectCity</span>
+                <span class="method-start">40056 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginWithInvalidMobile</span>
-                <span class="method-start">89639 ms</span>
+                <span class="method-start">50353 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">90755 ms</span>
+                <span class="method-start">51244 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">91067 ms</span>
+                <span class="method-start">51545 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">setupPagesAndSelectCity</span>
-                <span class="method-start">106553 ms</span>
+                <span class="method-name">SelectCity</span>
+                <span class="method-start">60639 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginWithValidMobile</span>
-                <span class="method-start">117988 ms</span>
+                <span class="method-start">70926 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">119788 ms</span>
+                <span class="method-start">72270 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CityTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">120145 ms</span>
+                <span class="method-start">72520 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testChangeLocation</span>
-                <span class="method-start">127120 ms</span>
+                <span class="method-start">84948 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">138848 ms</span>
+                <span class="method-start">95510 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">139147 ms</span>
+                <span class="method-start">95755 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchAndSelectCity</span>
-                <span class="method-start">150780 ms</span>
+                <span class="method-start">107979 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">162291 ms</span>
+                <span class="method-start">118300 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">162678 ms</span>
+                <span class="method-start">118557 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSelectCityByIcon</span>
-                <span class="method-start">168021 ms</span>
+                <span class="method-start">127725 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">168465 ms</span>
+                <span class="method-start">128022 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">168742 ms</span>
+                <span class="method-start">128212 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testViewAllCities</span>
-                <span class="method-start">173405 ms</span>
+                <span class="method-start">137629 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">174314 ms</span>
+                <span class="method-start">138191 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.MovieTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">174632 ms</span>
+                <span class="method-start">138429 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setupPagesAndSelectCity</span>
-                <span class="method-start">182708 ms</span>
+                <span class="method-start">147464 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testMovie8SelectRunningMovie</span>
-                <span class="method-start">194068 ms</span>
+                <span class="method-name">testSelectRunningMovie</span>
+                <span class="method-start">157824 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">196586 ms</span>
+                <span class="method-start">160133 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">196968 ms</span>
+                <span class="method-start">160440 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setupPagesAndSelectCity</span>
-                <span class="method-start">202419 ms</span>
+                <span class="method-start">171983 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testTopMenuNavigation</span>
-                <span class="method-start">213766 ms</span>
+                <span class="method-name">testTopMenuNavigate</span>
+                <span class="method-start">182257 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">227665 ms</span>
+                <span class="method-start">195640 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">228129 ms</span>
+                <span class="method-start">195868 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setupPagesAndSelectCity</span>
-                <span class="method-start">234043 ms</span>
+                <span class="method-start">206357 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testUpcomingAndNowShowing</span>
-                <span class="method-start">245444 ms</span>
+                <span class="method-start">216665 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">248697 ms</span>
+                <span class="method-start">219329 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.GiftCardTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">249081 ms</span>
+                <span class="method-start">219620 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setupPagesAndSelectCity</span>
-                <span class="method-start">254229 ms</span>
+                <span class="method-start">228629 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testGiftCardSection</span>
-                <span class="method-start">265594 ms</span>
+                <span class="method-start">238904 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">265965 ms</span>
+                <span class="method-start">239396 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">266343 ms</span>
+                <span class="method-start">239652 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setupPagesAndSelectCity</span>
-                <span class="method-start">272051 ms</span>
+                <span class="method-start">248136 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testInvalidGiftVoucher</span>
-                <span class="method-start">283443 ms</span>
+                <span class="method-start">258424 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">284889 ms</span>
+                <span class="method-start">259554 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

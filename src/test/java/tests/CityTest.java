@@ -27,6 +27,6 @@ public class CityTest extends DriverSetup {
     @Test
     public void testViewAllCities() {
         CityPage city = new CityPage();
-        city.viewAllCitiesToggleAndValidate();
+        city.viewAllCities();
     }
 }

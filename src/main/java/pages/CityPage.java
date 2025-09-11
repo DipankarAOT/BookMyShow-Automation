@@ -27,8 +27,7 @@ public class CityPage {
         String city = ConfigLoader.get("city");
         driver.findElement(LocatorRepository.get("cityInput")).sendKeys(city, Keys.ENTER);
 
-        try { Thread.sleep(1000); } catch (InterruptedException ignored) {}
-
+        
         // Check for error
         try {
             WebElement err = driver.findElement(LocatorRepository.get("errorMsg"));
@@ -41,7 +40,7 @@ public class CityPage {
         WaitUtils.urlContains(city.toLowerCase(), 10);
         WebElement cityChip = WaitUtils.visible(region(city), 10);
         previousCity = cityChip.getText();
-        System.out.println("City selected successfully: " + previousCity);
+        //System.out.println("City selected successfully: " + previousCity);
     }
 
     public void changeLocation() {
@@ -53,7 +52,7 @@ public class CityPage {
         driver.findElement(LocatorRepository.get("cityInput")).sendKeys(newCity, Keys.ENTER);
         WaitUtils.urlContains(newCity.toLowerCase(), 10);
         previousCity = newCity;
-        System.out.println("Location changed successfully to: " + newCity);
+        //System.out.println("Location changed successfully to: " + newCity);
     }
 
     public void selectCityByIcon(String city) {
@@ -77,7 +76,7 @@ public class CityPage {
         }
     }
 
-    public void viewAllCitiesToggleAndValidate() {
+    public void viewAllCities() {
         WebElement allCities = WaitUtils.clickable(LocatorRepository.get("allCities"), 10);
         allCities.click();
 

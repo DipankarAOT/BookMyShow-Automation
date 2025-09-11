@@ -18,8 +18,8 @@ public class GiftCardPage {
         System.out.println("GiftCardPage initialized with WebDriver instance.");
     }
 
-    /** Opens Gift Cards section and validates 'Check Balance' icon visibility */
-    public void openGiftCardsAndValidateCheckBalanceVisible() {
+    /* Opens Gift Cards section and validates 'Check Balance' icon visibility */
+    public void validateCheckBalance() {
     	System.out.println("Attempting to open Gift Cards section.");
         WaitUtils.clickable(LocatorRepository.get("gift"), 10).click();
         System.out.println("'Gift' option clicked. Waiting for 'Check Balance' icon to appear.");
@@ -29,8 +29,8 @@ public class GiftCardPage {
         System.out.println("'Check Gift Card Balance' icon is visible and validated.");
     }
 
-    /** Enters an invalid voucher code and retrieves the error message reliably */
-    public void checkInvalidVoucherAndGetError() {
+    /* Enters an invalid voucher code and retrieves the error message reliably */
+    public void checkInvalidVoucher() {
     	System.out.println("Attempting to open Gift Cards section.");
         WaitUtils.clickable(LocatorRepository.get("gift"), 10).click();
     	System.out.println("Clicking on 'Check Balance' icon to validate voucher.");

@@ -21,23 +21,23 @@ public class MovieTest extends DriverSetup {
     }
 
     //@Test
-    public void testSelectRunningMovie() {
-        movie.openMoviesTab();
-        movie.movie_selectAnyRunningMovieAndPrintTitle();
-    }
+//    public void testSelectRunningMovie() {
+//        movie.openMoviesTab();
+//        movie.movie_selectAnyRunningMovieAndPrintTitle();
+//    }
 
     @Test
-    public void testMovie8SelectRunningMovie() {
-        movie.movie8_selectAnyRunningMovieAndPrintTitle();
+    public void testSelectRunningMovie() {
+        movie.movie8_selectRunningMovie();
     }
 
     @Test
     public void testUpcomingAndNowShowing() {
-        movie.upcomingAndNowShowing();
+        movie.upcomingMovie();
     }
 
     @Test
-    public void testTopMenuNavigation() throws InterruptedException {
+    public void testTopMenuNavigate() throws InterruptedException {
         movie.validateTopMenuNavigation();
     }
 }

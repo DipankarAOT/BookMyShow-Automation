@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-05T15:47:48 IST" name="BookMyShow Test Suite" finished-at="2025-09-05T15:52:34 IST" duration-ms="285330">
+  <suite started-at="2025-09-11T19:56:04 IST" name="BookMyShow Test Suite" finished-at="2025-09-11T20:00:24 IST" duration-ms="259802">
     <groups>
     </groups>
-    <test started-at="2025-09-05T15:47:48 IST" name="BookMyShow Tests" finished-at="2025-09-05T15:52:34 IST" duration-ms="285330">
+    <test started-at="2025-09-11T19:56:04 IST" name="BookMyShow Tests on chrome" finished-at="2025-09-11T20:00:24 IST" duration-ms="259802">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LoginTest@ee86bcb]" started-at="2025-09-05T15:47:48 IST" name="setup" finished-at="2025-09-05T15:48:40 IST" duration-ms="51599" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LoginTest@ee86bcb]" started-at="2025-09-11T19:56:04 IST" name="setup" finished-at="2025-09-11T19:56:23 IST" duration-ms="19194" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupPagesAndSelectCity()[pri:0, instance:tests.LoginTest@ee86bcb]" started-at="2025-09-05T15:48:40 IST" name="setupPagesAndSelectCity" finished-at="2025-09-05T15:48:52 IST" duration-ms="11588" status="PASS">
+        <test-method is-config="true" signature="SelectCity()[pri:0, instance:tests.LoginTest@ee86bcb]" started-at="2025-09-11T19:56:23 IST" name="SelectCity" finished-at="2025-09-11T19:56:34 IST" duration-ms="10289" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupPagesAndSelectCity -->
-        <test-method signature="testLoginUIElements()[pri:0, instance:tests.LoginTest@ee86bcb]" started-at="2025-09-05T15:48:52 IST" name="testLoginUIElements" finished-at="2025-09-05T15:48:54 IST" duration-ms="1853" status="PASS">
+        </test-method> <!-- SelectCity -->
+        <test-method signature="testLoginUIElements()[pri:0, instance:tests.LoginTest@ee86bcb]" started-at="2025-09-11T19:56:34 IST" name="testLoginUIElements" finished-at="2025-09-11T19:56:35 IST" duration-ms="1223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginUIElements -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.LoginTest@ee86bcb]" started-at="2025-09-05T15:48:54 IST" name="quitDriver" finished-at="2025-09-05T15:48:54 IST" duration-ms="407" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.LoginTest@ee86bcb]" started-at="2025-09-11T19:56:35 IST" name="quitDriver" finished-at="2025-09-11T19:56:35 IST" duration-ms="365" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LoginTest@ee86bcb]" started-at="2025-09-05T15:48:54 IST" name="setup" finished-at="2025-09-05T15:49:02 IST" duration-ms="7958" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LoginTest@ee86bcb]" started-at="2025-09-11T19:56:35 IST" name="setup" finished-at="2025-09-11T19:56:44 IST" duration-ms="8976" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,19 +41,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupPagesAndSelectCity()[pri:0, instance:tests.LoginTest@ee86bcb]" started-at="2025-09-05T15:49:02 IST" name="setupPagesAndSelectCity" finished-at="2025-09-05T15:49:18 IST" duration-ms="16221" status="PASS">
+        <test-method is-config="true" signature="SelectCity()[pri:0, instance:tests.LoginTest@ee86bcb]" started-at="2025-09-11T19:56:44 IST" name="SelectCity" finished-at="2025-09-11T19:56:54 IST" duration-ms="10297" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupPagesAndSelectCity -->
-        <test-method signature="testLoginWithInvalidMobile()[pri:0, instance:tests.LoginTest@ee86bcb]" started-at="2025-09-05T15:49:18 IST" name="testLoginWithInvalidMobile" finished-at="2025-09-05T15:49:19 IST" duration-ms="1113" status="PASS">
+        </test-method> <!-- SelectCity -->
+        <test-method signature="testLoginWithInvalidMobile()[pri:0, instance:tests.LoginTest@ee86bcb]" started-at="2025-09-11T19:56:54 IST" name="testLoginWithInvalidMobile" finished-at="2025-09-11T19:56:55 IST" duration-ms="890" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithInvalidMobile -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.LoginTest@ee86bcb]" started-at="2025-09-05T15:49:19 IST" name="quitDriver" finished-at="2025-09-05T15:49:20 IST" duration-ms="312" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.LoginTest@ee86bcb]" started-at="2025-09-11T19:56:55 IST" name="quitDriver" finished-at="2025-09-11T19:56:56 IST" duration-ms="301" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LoginTest@ee86bcb]" started-at="2025-09-05T15:49:20 IST" name="setup" finished-at="2025-09-05T15:49:35 IST" duration-ms="15486" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LoginTest@ee86bcb]" started-at="2025-09-11T19:56:56 IST" name="setup" finished-at="2025-09-11T19:57:05 IST" duration-ms="9092" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -64,21 +64,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupPagesAndSelectCity()[pri:0, instance:tests.LoginTest@ee86bcb]" started-at="2025-09-05T15:49:35 IST" name="setupPagesAndSelectCity" finished-at="2025-09-05T15:49:46 IST" duration-ms="11435" status="PASS">
+        <test-method is-config="true" signature="SelectCity()[pri:0, instance:tests.LoginTest@ee86bcb]" started-at="2025-09-11T19:57:05 IST" name="SelectCity" finished-at="2025-09-11T19:57:15 IST" duration-ms="10287" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupPagesAndSelectCity -->
-        <test-method signature="testLoginWithValidMobile()[pri:0, instance:tests.LoginTest@ee86bcb]" started-at="2025-09-05T15:49:46 IST" name="testLoginWithValidMobile" finished-at="2025-09-05T15:49:48 IST" duration-ms="1798" status="PASS">
+        </test-method> <!-- SelectCity -->
+        <test-method signature="testLoginWithValidMobile()[pri:0, instance:tests.LoginTest@ee86bcb]" started-at="2025-09-11T19:57:15 IST" name="testLoginWithValidMobile" finished-at="2025-09-11T19:57:16 IST" duration-ms="1343" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithValidMobile -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.LoginTest@ee86bcb]" started-at="2025-09-05T15:49:48 IST" name="quitDriver" finished-at="2025-09-05T15:49:49 IST" duration-ms="352" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.LoginTest@ee86bcb]" started-at="2025-09-11T19:57:16 IST" name="quitDriver" finished-at="2025-09-11T19:57:17 IST" duration-ms="249" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- tests.LoginTest -->
       <class name="tests.CityTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.CityTest@db57326]" started-at="2025-09-05T15:49:49 IST" name="setup" finished-at="2025-09-05T15:49:56 IST" duration-ms="6975" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.CityTest@db57326]" started-at="2025-09-11T19:57:17 IST" name="setup" finished-at="2025-09-11T19:57:29 IST" duration-ms="12428" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -89,15 +89,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testChangeLocation()[pri:0, instance:tests.CityTest@db57326]" started-at="2025-09-05T15:49:56 IST" name="testChangeLocation" finished-at="2025-09-05T15:50:07 IST" duration-ms="11728" status="PASS">
+        <test-method signature="testChangeLocation()[pri:0, instance:tests.CityTest@db57326]" started-at="2025-09-11T19:57:29 IST" name="testChangeLocation" finished-at="2025-09-11T19:57:40 IST" duration-ms="10561" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testChangeLocation -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.CityTest@db57326]" started-at="2025-09-05T15:50:07 IST" name="quitDriver" finished-at="2025-09-05T15:50:08 IST" duration-ms="299" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.CityTest@db57326]" started-at="2025-09-11T19:57:40 IST" name="quitDriver" finished-at="2025-09-11T19:57:40 IST" duration-ms="245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.CityTest@db57326]" started-at="2025-09-05T15:50:08 IST" name="setup" finished-at="2025-09-05T15:50:19 IST" duration-ms="11633" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.CityTest@db57326]" started-at="2025-09-11T19:57:40 IST" name="setup" finished-at="2025-09-11T19:57:52 IST" duration-ms="12224" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -108,15 +108,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testSearchAndSelectCity()[pri:0, instance:tests.CityTest@db57326]" started-at="2025-09-05T15:50:19 IST" name="testSearchAndSelectCity" finished-at="2025-09-05T15:50:31 IST" duration-ms="11511" status="PASS">
+        <test-method signature="testSearchAndSelectCity()[pri:0, instance:tests.CityTest@db57326]" started-at="2025-09-11T19:57:52 IST" name="testSearchAndSelectCity" finished-at="2025-09-11T19:58:02 IST" duration-ms="10320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchAndSelectCity -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.CityTest@db57326]" started-at="2025-09-05T15:50:31 IST" name="quitDriver" finished-at="2025-09-05T15:50:31 IST" duration-ms="387" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.CityTest@db57326]" started-at="2025-09-11T19:58:02 IST" name="quitDriver" finished-at="2025-09-11T19:58:03 IST" duration-ms="255" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.CityTest@db57326]" started-at="2025-09-05T15:50:31 IST" name="setup" finished-at="2025-09-05T15:50:36 IST" duration-ms="5343" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.CityTest@db57326]" started-at="2025-09-11T19:58:03 IST" name="setup" finished-at="2025-09-11T19:58:12 IST" duration-ms="9168" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -127,15 +127,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testSelectCityByIcon()[pri:0, instance:tests.CityTest@db57326]" started-at="2025-09-05T15:50:36 IST" name="testSelectCityByIcon" finished-at="2025-09-05T15:50:37 IST" duration-ms="443" status="PASS">
+        <test-method signature="testSelectCityByIcon()[pri:0, instance:tests.CityTest@db57326]" started-at="2025-09-11T19:58:12 IST" name="testSelectCityByIcon" finished-at="2025-09-11T19:58:12 IST" duration-ms="297" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSelectCityByIcon -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.CityTest@db57326]" started-at="2025-09-05T15:50:37 IST" name="quitDriver" finished-at="2025-09-05T15:50:37 IST" duration-ms="277" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.CityTest@db57326]" started-at="2025-09-11T19:58:12 IST" name="quitDriver" finished-at="2025-09-11T19:58:12 IST" duration-ms="190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.CityTest@db57326]" started-at="2025-09-05T15:50:37 IST" name="setup" finished-at="2025-09-05T15:50:42 IST" duration-ms="4663" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.CityTest@db57326]" started-at="2025-09-11T19:58:12 IST" name="setup" finished-at="2025-09-11T19:58:22 IST" duration-ms="9416" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -146,17 +146,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testViewAllCities()[pri:0, instance:tests.CityTest@db57326]" started-at="2025-09-05T15:50:42 IST" name="testViewAllCities" finished-at="2025-09-05T15:50:43 IST" duration-ms="909" status="PASS">
+        <test-method signature="testViewAllCities()[pri:0, instance:tests.CityTest@db57326]" started-at="2025-09-11T19:58:22 IST" name="testViewAllCities" finished-at="2025-09-11T19:58:22 IST" duration-ms="558" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testViewAllCities -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.CityTest@db57326]" started-at="2025-09-05T15:50:43 IST" name="quitDriver" finished-at="2025-09-05T15:50:43 IST" duration-ms="317" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.CityTest@db57326]" started-at="2025-09-11T19:58:22 IST" name="quitDriver" finished-at="2025-09-11T19:58:23 IST" duration-ms="238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- tests.CityTest -->
       <class name="tests.MovieTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.MovieTest@34a875b3]" started-at="2025-09-05T15:50:43 IST" name="setup" finished-at="2025-09-05T15:50:51 IST" duration-ms="8075" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.MovieTest@34a875b3]" started-at="2025-09-11T19:58:23 IST" name="setup" finished-at="2025-09-11T19:58:32 IST" duration-ms="9035" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -167,19 +167,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupPagesAndSelectCity()[pri:0, instance:tests.MovieTest@34a875b3]" started-at="2025-09-05T15:50:51 IST" name="setupPagesAndSelectCity" finished-at="2025-09-05T15:51:03 IST" duration-ms="11357" status="PASS">
+        <test-method is-config="true" signature="setupPagesAndSelectCity()[pri:0, instance:tests.MovieTest@34a875b3]" started-at="2025-09-11T19:58:32 IST" name="setupPagesAndSelectCity" finished-at="2025-09-11T19:58:42 IST" duration-ms="10360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPagesAndSelectCity -->
-        <test-method signature="testMovie8SelectRunningMovie()[pri:0, instance:tests.MovieTest@34a875b3]" started-at="2025-09-05T15:51:03 IST" name="testMovie8SelectRunningMovie" finished-at="2025-09-05T15:51:05 IST" duration-ms="2515" status="PASS">
+        <test-method signature="testSelectRunningMovie()[pri:0, instance:tests.MovieTest@34a875b3]" started-at="2025-09-11T19:58:42 IST" name="testSelectRunningMovie" finished-at="2025-09-11T19:58:44 IST" duration-ms="2308" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMovie8SelectRunningMovie -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.MovieTest@34a875b3]" started-at="2025-09-05T15:51:05 IST" name="quitDriver" finished-at="2025-09-05T15:51:05 IST" duration-ms="379" status="PASS">
+        </test-method> <!-- testSelectRunningMovie -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.MovieTest@34a875b3]" started-at="2025-09-11T19:58:44 IST" name="quitDriver" finished-at="2025-09-11T19:58:45 IST" duration-ms="307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.MovieTest@34a875b3]" started-at="2025-09-05T15:51:05 IST" name="setup" finished-at="2025-09-05T15:51:11 IST" duration-ms="5451" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.MovieTest@34a875b3]" started-at="2025-09-11T19:58:45 IST" name="setup" finished-at="2025-09-11T19:58:56 IST" duration-ms="11543" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -190,19 +190,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupPagesAndSelectCity()[pri:0, instance:tests.MovieTest@34a875b3]" started-at="2025-09-05T15:51:11 IST" name="setupPagesAndSelectCity" finished-at="2025-09-05T15:51:22 IST" duration-ms="11347" status="PASS">
+        <test-method is-config="true" signature="setupPagesAndSelectCity()[pri:0, instance:tests.MovieTest@34a875b3]" started-at="2025-09-11T19:58:56 IST" name="setupPagesAndSelectCity" finished-at="2025-09-11T19:59:06 IST" duration-ms="10273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPagesAndSelectCity -->
-        <test-method signature="testTopMenuNavigation()[pri:0, instance:tests.MovieTest@34a875b3]" started-at="2025-09-05T15:51:22 IST" name="testTopMenuNavigation" finished-at="2025-09-05T15:51:36 IST" duration-ms="13897" status="PASS">
+        <test-method signature="testTopMenuNavigate()[pri:0, instance:tests.MovieTest@34a875b3]" started-at="2025-09-11T19:59:06 IST" name="testTopMenuNavigate" finished-at="2025-09-11T19:59:20 IST" duration-ms="13383" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testTopMenuNavigation -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.MovieTest@34a875b3]" started-at="2025-09-05T15:51:36 IST" name="quitDriver" finished-at="2025-09-05T15:51:37 IST" duration-ms="464" status="PASS">
+        </test-method> <!-- testTopMenuNavigate -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.MovieTest@34a875b3]" started-at="2025-09-11T19:59:20 IST" name="quitDriver" finished-at="2025-09-11T19:59:20 IST" duration-ms="226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.MovieTest@34a875b3]" started-at="2025-09-05T15:51:37 IST" name="setup" finished-at="2025-09-05T15:51:43 IST" duration-ms="5914" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.MovieTest@34a875b3]" started-at="2025-09-11T19:59:20 IST" name="setup" finished-at="2025-09-11T19:59:30 IST" duration-ms="10489" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -213,21 +213,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupPagesAndSelectCity()[pri:0, instance:tests.MovieTest@34a875b3]" started-at="2025-09-05T15:51:43 IST" name="setupPagesAndSelectCity" finished-at="2025-09-05T15:51:54 IST" duration-ms="11401" status="PASS">
+        <test-method is-config="true" signature="setupPagesAndSelectCity()[pri:0, instance:tests.MovieTest@34a875b3]" started-at="2025-09-11T19:59:30 IST" name="setupPagesAndSelectCity" finished-at="2025-09-11T19:59:41 IST" duration-ms="10307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPagesAndSelectCity -->
-        <test-method signature="testUpcomingAndNowShowing()[pri:0, instance:tests.MovieTest@34a875b3]" started-at="2025-09-05T15:51:54 IST" name="testUpcomingAndNowShowing" finished-at="2025-09-05T15:51:57 IST" duration-ms="3250" status="PASS">
+        <test-method signature="testUpcomingAndNowShowing()[pri:0, instance:tests.MovieTest@34a875b3]" started-at="2025-09-11T19:59:41 IST" name="testUpcomingAndNowShowing" finished-at="2025-09-11T19:59:43 IST" duration-ms="2663" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpcomingAndNowShowing -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.MovieTest@34a875b3]" started-at="2025-09-05T15:51:57 IST" name="quitDriver" finished-at="2025-09-05T15:51:58 IST" duration-ms="384" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.MovieTest@34a875b3]" started-at="2025-09-11T19:59:43 IST" name="quitDriver" finished-at="2025-09-11T19:59:44 IST" duration-ms="291" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- tests.MovieTest -->
       <class name="tests.GiftCardTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.GiftCardTest@4b14918a]" started-at="2025-09-05T15:51:58 IST" name="setup" finished-at="2025-09-05T15:52:03 IST" duration-ms="5146" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.GiftCardTest@4b14918a]" started-at="2025-09-11T19:59:44 IST" name="setup" finished-at="2025-09-11T19:59:53 IST" duration-ms="9009" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -238,19 +238,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupPagesAndSelectCity()[pri:0, instance:tests.GiftCardTest@4b14918a]" started-at="2025-09-05T15:52:03 IST" name="setupPagesAndSelectCity" finished-at="2025-09-05T15:52:14 IST" duration-ms="11365" status="PASS">
+        <test-method is-config="true" signature="setupPagesAndSelectCity()[pri:0, instance:tests.GiftCardTest@4b14918a]" started-at="2025-09-11T19:59:53 IST" name="setupPagesAndSelectCity" finished-at="2025-09-11T20:00:03 IST" duration-ms="10275" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPagesAndSelectCity -->
-        <test-method signature="testGiftCardSection()[pri:0, instance:tests.GiftCardTest@4b14918a]" started-at="2025-09-05T15:52:14 IST" name="testGiftCardSection" finished-at="2025-09-05T15:52:14 IST" duration-ms="371" status="PASS">
+        <test-method signature="testGiftCardSection()[pri:0, instance:tests.GiftCardTest@4b14918a]" started-at="2025-09-11T20:00:03 IST" name="testGiftCardSection" finished-at="2025-09-11T20:00:03 IST" duration-ms="491" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGiftCardSection -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.GiftCardTest@4b14918a]" started-at="2025-09-05T15:52:14 IST" name="quitDriver" finished-at="2025-09-05T15:52:15 IST" duration-ms="376" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.GiftCardTest@4b14918a]" started-at="2025-09-11T20:00:03 IST" name="quitDriver" finished-at="2025-09-11T20:00:04 IST" duration-ms="255" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.GiftCardTest@4b14918a]" started-at="2025-09-05T15:52:15 IST" name="setup" finished-at="2025-09-05T15:52:21 IST" duration-ms="5708" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.GiftCardTest@4b14918a]" started-at="2025-09-11T20:00:04 IST" name="setup" finished-at="2025-09-11T20:00:12 IST" duration-ms="8483" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -261,19 +261,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupPagesAndSelectCity()[pri:0, instance:tests.GiftCardTest@4b14918a]" started-at="2025-09-05T15:52:21 IST" name="setupPagesAndSelectCity" finished-at="2025-09-05T15:52:32 IST" duration-ms="11392" status="PASS">
+        <test-method is-config="true" signature="setupPagesAndSelectCity()[pri:0, instance:tests.GiftCardTest@4b14918a]" started-at="2025-09-11T20:00:12 IST" name="setupPagesAndSelectCity" finished-at="2025-09-11T20:00:23 IST" duration-ms="10288" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPagesAndSelectCity -->
-        <test-method signature="testInvalidGiftVoucher()[pri:0, instance:tests.GiftCardTest@4b14918a]" started-at="2025-09-05T15:52:32 IST" name="testInvalidGiftVoucher" finished-at="2025-09-05T15:52:33 IST" duration-ms="1445" status="PASS">
+        <test-method signature="testInvalidGiftVoucher()[pri:0, instance:tests.GiftCardTest@4b14918a]" started-at="2025-09-11T20:00:23 IST" name="testInvalidGiftVoucher" finished-at="2025-09-11T20:00:24 IST" duration-ms="1130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidGiftVoucher -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.GiftCardTest@4b14918a]" started-at="2025-09-05T15:52:33 IST" name="quitDriver" finished-at="2025-09-05T15:52:34 IST" duration-ms="375" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.GiftCardTest@4b14918a]" started-at="2025-09-11T20:00:24 IST" name="quitDriver" finished-at="2025-09-11T20:00:24 IST" duration-ms="207" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- tests.GiftCardTest -->
-    </test> <!-- BookMyShow Tests -->
+    </test> <!-- BookMyShow Tests on chrome -->
   </suite> <!-- BookMyShow Test Suite -->
 </testng-results>

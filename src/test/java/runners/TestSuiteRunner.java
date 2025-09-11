@@ -17,3 +17,9 @@ public class TestSuiteRunner {
         testng.run();
     }
 }
+
+//Run TestNG programmatically (without using TestNG plugin in IDE or mvn test).
+
+//Pass parameters dynamically (like browser name) at runtime.
+
+//Control execution flow via Java main method, which can be easily integrated with CI/CD tools.

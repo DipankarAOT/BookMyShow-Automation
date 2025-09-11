@@ -13,7 +13,7 @@ public class MoviePage {
     public MoviePage() {
         this.driver = DriverSetup.getDriver();
         PageFactory.initElements(driver, this);
-        System.out.println("MoviePage initialized with WebDriver instance: " + driver.getClass().getSimpleName());
+        System.out.println("MoviePage initialized with WebDFriver instance: " + driver.getClass().getSimpleName());
     }
 
     public void openMoviesTab() {
@@ -23,7 +23,7 @@ public class MoviePage {
         moviesTab.click();
     }
 
-    public void movie_selectAnyRunningMovieAndPrintTitle() {
+    public void movie_selectRunningMovie() {
         System.out.println("Attempting to select one of the first two running movies.");
 
         for (int i = 1; i <= 2; i++) {
@@ -64,9 +64,9 @@ public class MoviePage {
         Assert.fail("Could not open a valid movie card after trying first two tiles.");
     }
 
-    public void movie8_selectAnyRunningMovieAndPrintTitle() {
+    public void movie8_selectRunningMovie() {
         // Reuse main logic to avoid code duplication
-        movie_selectAnyRunningMovieAndPrintTitle();
+        movie_selectRunningMovie();
     }
 
     public void validateTopMenuNavigation() throws InterruptedException {
@@ -97,7 +97,7 @@ public class MoviePage {
         System.out.println("Top menu navigation validation completed.");
     }
 
-    public void upcomingAndNowShowing() {
+    public void upcomingMovie() {
         System.out.println("Navigating to 'Upcoming' and 'Now Showing' sections in Movies.");
         openMoviesTab();
 
